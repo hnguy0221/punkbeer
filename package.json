@@ -1,0 +1,35 @@
+{
+  "name": "punkbeer",
+  "version": "1.0.0",
+  "description": "Use the punk beer api to create a unique project that uses templating to show data on the page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnguy0221/punkbeer.git"
+  },
+  "author": "Hai Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnguy0221/punkbeer/issues"
+  },
+  "homepage": "https://github.com/hnguy0221/punkbeer#readme",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
+    "react-router": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.8.1"
+  }
+}

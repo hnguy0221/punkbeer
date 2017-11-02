@@ -1,11 +1,11 @@
 var React = require("react");
-var BeerItem = require("./grandchildren/BeerItem.js");
+var BeerItem = require("./greatgrandchildren/BeerItem.js");
 
 var Results = React.createClass(
 {
-    addToFavourite: function(id)
+    procFavoriteBeer: function(id)
     {
-        this.props.onAddToFavourite(id);
+        this.props.processFavoriteBeer(id);
     },
     render: function()
     {
@@ -15,9 +15,9 @@ var Results = React.createClass(
             beerItems = this.props.beers.map((beer, i) => {
                 return (
                     <BeerItem 
-                        key={beer.id} 
+                        key={i} 
                         beer={beer}
-                        onAddToFavourite={this.addToFavourite}
+                        onProcFavoriteBeer={this.procFavoriteBeer}
                     />
                 );
             });

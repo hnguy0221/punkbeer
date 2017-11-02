@@ -2,13 +2,13 @@ var React = require("react");
 
 var BeerItem = React.createClass(
 {
-    addToFavourite: function(id) 
+    handleFavoriteBeer: function(id) 
     {
-        this.props.onAddToFavourite(id);
+        this.props.onProcFavoriteBeer(id);
     },
     render: function()
     {
-        console.log(this.props.beer);
+        //console.log(this.props.beer);
         return (
             <div className="column is-one-third">
                 <div className="box">
@@ -20,7 +20,11 @@ var BeerItem = React.createClass(
                         </div>
                     </nav>*/}
                     <a className="level-right">
-                        <span className="icon is-small"><i className="fa fa-star-o" onClick={this.addToFavourite.bind(this, this.props.beer.id)}></i></span>
+                        <span className="icon is-small">
+                            <i className="fa fa-star-o" 
+                                onClick={this.handleFavoriteBeer.bind(this, this.props.beer._id)}>
+                            </i>
+                        </span>
                     </a>
                     <article className="media">
                         <div className="media-left">

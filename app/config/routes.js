@@ -19,12 +19,16 @@ var IndexRoute = router.IndexRoute;
 
 //include the high-level components
 var Main = require("../components/Main.js");
+var Home = require("../components/children/Home.js");
+var Favourite = require("../components/children/Favourite.js");
 
 // Export the Routes
 module.exports = (
     // The high level component is the Router component
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
+            <IndexRoute component={Home} />
+            <Route path="Favourite" component={Favourite} />
         </Route>
     </Router>
 );
